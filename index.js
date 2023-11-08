@@ -8,11 +8,7 @@ app.use(
   cors()
 );
 
-require('dotenv').config();
-
 app.use(express.json());
-
-const port = process.env.PORT; 
 
 app.use("/api/", bookrouter);
 
