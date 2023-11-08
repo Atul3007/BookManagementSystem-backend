@@ -24,12 +24,12 @@ app.get("/",(req, res) => {
   }
 });
 
-app.listen(port, async () => {
+app.listen(8000, async () => {
   try {
     await connection;
     console.log("Connected to db");
   } catch (error) {
     console.log("Error occurred");
   }
-  console.log(`Running on ${port}`);
+  console.log(`Running on 8000`);
 });
